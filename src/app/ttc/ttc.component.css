@@ -1,0 +1,135 @@
+.title{
+    font-size: 1.4rem;
+    /* font-weight: bold; */
+    margin: 25px 15px;
+    text-align: justify;
+}
+
+.accordion {
+    background-color: rgb(34, 95, 165);
+    color: #eee;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-weight: 700;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-top-left-radius: 15px;
+  }
+
+  
+  .active, .accordion:hover {
+    background-color: rgb(56, 149, 255);
+  }
+
+  .dateHolder{
+    margin: 50px auto;
+  }
+  
+  .panel {
+    padding: 2px 18px;
+    background-color:  rgb(212, 240, 253);
+    border-radius: 0;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;   
+    font-family: 'Roboto';
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #aaa;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after { 
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+  .contain{
+    padding:20px;
+  }
+
+  .datebox{
+    width: 100%;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+
+  .date{
+    padding: 3px;
+    margin: 0 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .price{
+    padding: 3px;
+    margin: 0 10px;
+
+  }
+
+  p.rate::before {
+    content: '\20AC';
+  }
+
+  .contain>p{
+    font-weight: bold;
+  }
+
+  .contain>ul>li{
+    display: inline-block;
+  }
+
+  div.subset>p.head{
+    display: block;
+    font-weight: 700;
+  }
+  .yogahedli{
+    display: inline-block;
+    cursor: pointer;
+    border-bottom: 1px dotted black;
+    transition: all 0.3s ease;
+    margin: 0 15px;
+    position: relative;
+  }
+  .yogahedli:hover{
+    border-bottom: 1px solid red;
+  }
+
+  .yogahedli .litxttip{
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(255,152,255,0.45);
+  color: black;;
+  text-align: center;
+  padding: 5px 0;
+  border: 1px solid black;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top:25px;
+  left:50%;
+  margin-left: -60px;
+  }
+
+  .yogahedli:hover .litxttip{
+    visibility: visible;
+  }
+
+  .banner{
+    background-image:url('../../assets/imgs/ttc/ttc1.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;  
+    background-attachment: fixed;
+    width: 100%;
+    background-position: center;
+    height: 50vh;
+    margin: 20px 0;
+  }

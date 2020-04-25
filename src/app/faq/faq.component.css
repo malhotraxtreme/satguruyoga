@@ -1,0 +1,51 @@
+.accordion {
+  background-color: rgb(34, 95, 165);
+  color: #eee;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-weight: 700;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-top-left-radius: 15px;
+}
+
+
+.active, .accordion:hover {
+  background-color: rgb(56, 149, 255);
+}
+
+
+
+.panel {
+  padding: 2px 18px;
+  background-color:  rgb(212, 240, 253);
+  border-radius: 0;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;   
+  font-family: 'Roboto';
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #aaa;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.bgtransparent {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 13px;
+  padding: 20px;
+  margin-bottom: 30px;
+}

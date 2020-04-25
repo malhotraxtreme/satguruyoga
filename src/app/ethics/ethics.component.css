@@ -1,0 +1,18 @@
+.title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.rules{
+    justify-content: center;
+    padding: 10px 0;
+    color:white;
+    padding-left:20px;
+}
+
+.rulesul{
+    margin-bottom: 40px;
+    padding: 7%;
+    background-color:  rgb(56, 149, 255);
+}

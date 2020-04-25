@@ -1,0 +1,113 @@
+.title{
+    font-size: 1em;
+    margin: 25px 15px;
+}
+
+.accordion {
+    background-color: rgb(34, 95, 165);
+    color: #eee;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-weight: 700;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-top-left-radius: 15px;
+  }
+
+  
+  .active, .accordion:hover {
+    background-color: rgb(56, 149, 255);
+  }
+
+  .dateHolder{
+    margin: 50px auto;
+  }
+
+  .banner{
+    background-image:url('../../assets/imgs/daily/1.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;  
+    background-attachment: fixed;
+    width: 100%;
+    background-position: center;
+    height: 50vh;
+    margin: 20px 0;
+  }
+
+  .panel {
+    padding: 2px 18px;
+    background-color:  rgb(212, 240, 253);
+    border-radius: 0;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;   
+    font-family: 'Roboto';
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #aaa;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after { 
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+  .contain{
+    padding:10px;
+  }
+
+  .datebox{
+    width: 100%;
+    padding:0;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  .date{
+    padding: 3px;
+    margin: 0 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .price{
+    padding: 3px;
+    margin: 0 10px;
+
+  }
+
+  p.rate::before {
+    content: '\20AC';
+  }
+
+  .contain>p{
+  font-size: 1em;
+  }
+
+  .contain>ul>li{
+    display: inline-block;
+  }
+
+  div.subset>p.head{
+    display: block;
+    font-weight: 700;
+  }
+
+  .text{
+    font-size: 1em;
+  }
+
+  @media screen and (max-width: 640px) {
+    .text, .name{
+      font-size: 0.8em;
+    }
+  
+  }

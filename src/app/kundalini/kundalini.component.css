@@ -1,0 +1,34 @@
+.title{
+    font-size: 1.4rem;
+    /* font-weight: bold; */
+    margin: 25px 15px;
+    text-align: justify;
+}
+
+.banner{
+    background-image:url('../../assets/imgs/ttc/ttc1.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;  
+    background-attachment: fixed;
+    width: 100%;
+    background-position: center;
+    height: 50vh;
+    margin: 20px 0;
+  }
+
+
+  .boldy{
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  #txt{
+    margin-top:20% ;
+  }
+
+  @media screen and (max-width: 640px) {
+  #txt{
+      margin-top:unset;
+  }
+}

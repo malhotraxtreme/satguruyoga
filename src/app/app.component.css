@@ -1,0 +1,393 @@
+.brandlogo {
+  display: block;
+  text-align: center;
+}
+
+.navibar {
+  z-index: 99;
+  padding: 25px 0;
+}
+
+#menuArea{
+    z-index: 2;
+    position: fixed;
+    top: 35px;
+    left: 20px;
+    padding: 10px;
+}
+
+.actionArea{
+display:none;
+}
+
+.fa-envelope{
+  flex:1;
+  font-size: 1.2em;
+}
+
+.navibar ul {
+  position: relative;
+  right: 20px;
+  display: inline-block;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+li.navtab, .navtab {
+  list-style: none;
+  height: 100%;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "Krub", sans-serif;
+  padding: 20px 15px;
+  line-height: 100%;
+  cursor: pointer;
+  transition: color ease-out 0.4s;
+}
+
+.icon-bar{
+  color:black;
+}
+
+.navname {
+  text-decoration: none;
+  color:rgb(56, 149, 255);
+  vertical-align: middle;
+  font-size: 2em;
+  padding-left: 10px;
+  font-family: "Sofia", sans-serif;
+  font-weight: 700;
+  height: 50px;
+}
+
+.brandimg{
+height:50px;
+}
+
+li.navtab:hover {
+  color: dodgerblue;
+}
+
+ul {
+  margin: 0;
+}
+.sumbmenuUl {
+  display: none;
+  color: black;
+  z-index: 1;
+  position: absolute;
+  top: 35px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 3px 5px rgba(150, 180, 250, 0.6);
+}
+
+li.navtab:hover .sumbmenuUl,
+.submenuhover:hover {
+  display: block;
+}
+
+.fa-caret-down {
+  transition: all ease 0.4s;
+}
+
+li.navtab:hover .fa-caret-down {
+  color: dodgerblue;
+}
+
+.submenuhover {
+  padding: 15px;
+  border: 1px solid transparent;
+  transition: all ease 0.4s;
+}
+
+a {
+  text-decoration: none;
+}
+
+.submenuhover:hover {
+  color: dodgerblue;
+  border: 1px solid dodgerblue;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.footer {
+  padding-top: 15px;
+  z-index: 1;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background: rgb(56, 149, 255);
+}
+
+.footdiv {
+  text-align: center;
+  padding: 15px;
+}
+
+.number{
+  display: flex;
+  align-items: center;
+}
+
+.fa{
+  flex:1;
+}
+.numbers{
+  flex:2;
+  text-align: left;
+  font-size: 1rem;
+  color:white;
+}
+
+.linkhead{
+  font-weight: 700;
+  color:white;
+  margin:0;
+}
+.linkdiv {
+  min-height: 50px;
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px 0;
+}
+
+
+.socialicon {
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: all 0.5s ease;
+  text-shadow: 0px 1px transparent;
+}
+.socialicon:hover {
+  text-shadow: 1px 1px 5px black;
+}
+.fa{
+  color:white;
+}
+
+.linktxt {
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-style: "Roboto";
+  color: #eee;
+  padding: 2px 10px;
+  transition: all 0.3s ease;
+}
+
+
+
+.bolder {
+  border: 1px solid dodgerblue;
+  padding: 5px;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+
+
+
+
+@media screen and (max-width: 640px) {
+  .topnav a, .topnav li {display: none;}
+  .topnav .icon {
+    float: right;
+    display: block;
+  }
+
+  .navname{
+    font-size: 1.5em;
+  }
+  .brandimg{
+    height:30px;
+  }
+
+  .actionArea{
+    display: flex;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+    background:rgb(56, 149, 255);
+    bottom:15px;
+    right:15px;
+    z-index: 2;
+    box-shadow: 2px 2px 5px black;
+    align-items: center;
+    text-align: center;
+  }
+
+  .topnav.responsive .navtab .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a,.topnav.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+/* For Full Menu` */
+
+input {
+  display: none;
+}
+
+
+.open {
+  background-color: #3c3c3c;
+  width: 24px;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.open:before {
+  content: "";
+  background-color: #3c3c3c;
+  width: 24px;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  position: relative;
+  top: -8px;
+  transform: rotate(0deg);
+  transition: all 0.3s linear;
+}
+
+.open:after {
+  content: "";
+  background-color: #3c3c3c;
+  width: 24px;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  position: relative;
+  top: 4px;
+  transform: rotate(0deg);
+  transition: all 0.3s linear;
+}
+
+
+.menuOpen {
+  width: 24px;
+  height: 15px;
+  display: block;
+  cursor: pointer;
+}
+
+.menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.85);
+}
+
+.menu label {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+
+.menu .menuContent {
+  margin: 150px auto;
+  text-align: center;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.menu ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 3vmax;
+  transition: color 0.2s;
+  font-family: Trebuchet MS;
+  text-transform: uppercase;
+  padding: 10px 0;
+  text-shadow: 0 0 5px rgba(200,200,0,0.5);
+}
+
+.menu ul li a:hover {
+  color: #ff8702;
+}
+
+.menuEffects {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.menuEffects ul {
+  transform: translateY(0%);
+  transition: all 0.5s;
+}
+
+#menuToggle:checked ~ .menuEffects {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s;
+}
+
+#menuToggle:checked ~ .menuEffects ul {
+  opacity: 1;
+}
+
+#menuToggle:checked ~ .menuOpen .open {
+  background-color: transparent;
+}
+
+#menuToggle:checked ~ .menuOpen .open:before {
+  content: "";
+  background-color: white;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#menuToggle:checked ~ .menuOpen .open:after {
+  content: "";
+  background-color: white;
+  transform: rotate(-45deg);
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#menuToggle:not(:checked) ~ .menuEffects ul {
+  transform: translateY(-30%);
+}
+

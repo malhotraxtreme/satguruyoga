@@ -1,21 +1,114 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<nav class="navibar">
+  <div class="brandlogo">
+    <img src="../assets/imgs/logo/logopng_b.png" class="brandimg" />
+    <a routerLink="/home" class="navname">
+      Satguru Yoga
+    </a>
+
+  </div>
+
+
+
+
+
+  <div id="menuArea">
+    <input type="checkbox" id="menuToggle">
+
+    <label for="menuToggle" class="menuOpen">
+      <div class="open"></div>
+    </label>
+
+    <div class="menu menuEffects">
+      <label for="menuToggle"></label>
+      <div class="menuContent">
+        <ul>
+          <!-- <li><a routerLink="/kundalini" (click)="hideMenu()" disabled>Kundalini yoga</a></li> -->
+          <li><a routerLink="/daily" (click)="hideMenu()">Daily Classes</a></li>
+          <li><a routerLink="/ttc" (click)="hideMenu()">200Hr Yoga Ttc</a></li>
+          <li><a routerLink="/kundalini" (click)="hideMenu()">Kundalini Yoga</a></li>
+          <li><a routerLink="/teachers" (click)="hideMenu()">Our Teachers</a></li>
+          <li><a routerLink="/apply" class="bolder" (click)="hideMenu()">Join Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
 
 <router-outlet></router-outlet>
+<div class="actionArea" (click)="openMsg()">
+  <i class="fa fa-envelope"></i>
+</div>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="row footer-links">
+
+      <div class="linkdiv col-md-4">
+        <p class="linkhead">Useful Links</p>
+        <a routerLink="/faq" class="linktxt">
+          Faq's
+        </a>
+        <a routerLink="/ethics" class="linktxt">
+          Ethics
+        </a>
+      </div>
+
+      <div class="linkdiv col-md-4">
+        <p class="linkhead">Follow us on</p>
+        <div>
+          <a href="#" class="socialicon">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="#" class="socialicon">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="#" class="socialicon">
+            <i class="fa fa-youtube-play"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="linkdiv col-md-4">
+        <p class="linkhead">Contact Us</p>
+        <!-- <div>
+          <div class="contactwrapper">
+            <div class="number">
+              <i class="fa fa-phone fa-2x"></i>
+              <p class="numbers">
+                +91 98166-93444 (Satguru Yoga)<br />
+                +91 98236-27258 (Bhakti Kutir)
+              </p>
+            </div>
+
+            <div class="number">
+              <i class="fa fa-at fa-2x"></i>
+              <p class="numbers">
+                9sunitasingh9@gmail.com (Satguru Yoga)<br />
+                bhaktikutir@gmail.com (Bhakti Kutir)
+              </p>
+            </div>
+
+
+
+          </div>
+
+        </div> -->
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container footdiv">
+
+    <div style="font-size:0.8em">
+      <p style="color:rgb(56, 149, 255);font-size:0.8em;text-align: right;">Develeoped by : Akash Malhotra
+        (@malhotraxtreme)</p>
+      All Rights Reserved&copy; 2019
+
+
+    </div>
+  </div>
+
+</footer>

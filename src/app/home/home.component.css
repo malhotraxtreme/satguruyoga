@@ -1,0 +1,93 @@
+
+.first{
+    background-image:url('../../assets/imgs/banners/1.jpg');
+}
+
+.second{
+    background-image:url('../../assets/imgs/banners/2.jpg');
+}
+
+.third{
+    background-image:url('../../assets/imgs/banners/3.jpg');
+}
+
+.fourth{
+    background-image:url('../../assets/imgs/banners/4.jpg');
+}
+
+.containtext{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../assets/imgs/ui/stroke1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:35vh;
+}
+
+
+.topbanner{
+        padding: 25px 10px; 
+        font-family: Roboto;
+        font-size: 1.3em;
+        text-align: center;
+}
+
+.banner{
+    background-repeat: no-repeat;
+    background-size:cover;  
+    background-attachment: fixed;
+    width: 100%;
+    background-position: center;
+    height: 70vh;
+} 
+
+.textbanner{
+    box-shadow: 0 1px 5px gray;
+    text-align: center;
+    padding: 30px 10px; 
+}
+.textbanner p.heading{
+    font-family: 'PlexBold';
+    font-size: 1.7em; 
+    font-stretch: ultra-expanded; 
+    letter-spacing: 3px;
+}
+
+.textbanner p.content{
+    font-family: 'Roboto';
+    font-size: 1em; 
+    letter-spacing: 1px;
+    margin: 0 10%;
+    padding-bottom: 30px;
+
+} 
+
+p.highlighttext{
+    font-family: 'Sofia', cursive;
+    display: inline-block;
+    text-align: center;
+    font-size: 5vmax;
+    color:#111;
+    padding:10px;
+    font-weight: 700;
+    text-shadow:2px 2px 5px white;
+}
+
+
+  @media screen and (max-width: 640px) {
+    .containtext{
+        height:20vh;
+    }
+
+    .textbanner p.content{
+        font-size: 0.8em;
+    }
+
+    .topbanner{
+        font-size: 1em;
+    }
+
+  }
+  
