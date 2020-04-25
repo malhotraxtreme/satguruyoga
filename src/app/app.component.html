@@ -8,10 +8,7 @@
   </div>
 
 
-
-
-
-  <div id="menuArea">
+  <div id="menuArea" *ngIf="validator">
     <input type="checkbox" id="menuToggle">
 
     <label for="menuToggle" class="menuOpen">
@@ -41,7 +38,7 @@
 
 
 
-<footer class="footer">
+<footer class="footer" *ngIf="validator">
   <div class="container">
     <div class="row footer-links">
 
@@ -57,7 +54,7 @@
 
       <div class="linkdiv col-md-4">
         <p class="linkhead">Follow us on</p>
-        <div>
+        <div style="padding-top:7px;">
           <a href="#" class="socialicon">
             <i class="fa fa-facebook"></i>
           </a>
@@ -72,7 +69,7 @@
 
       <div class="linkdiv col-md-4">
         <p class="linkhead">Contact Us</p>
-        <!-- <div>
+        <div style="padding-top:7px;">
           <div class="contactwrapper">
             <div class="number">
               <i class="fa fa-phone fa-2x"></i>
@@ -94,7 +91,7 @@
 
           </div>
 
-        </div> -->
+        </div>
       </div>
 
     </div>
@@ -105,7 +102,7 @@
     <div style="font-size:0.8em">
       <p style="color:rgb(56, 149, 255);font-size:0.8em;text-align: right;">Develeoped by : Akash Malhotra
         (@malhotraxtreme)</p>
-      All Rights Reserved&copy; 2019
+      All Rights Reserved&copy; {{ year}}
 
 
     </div>

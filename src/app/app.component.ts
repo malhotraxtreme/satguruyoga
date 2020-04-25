@@ -13,9 +13,11 @@ export class AppComponent implements OnInit {
    *
    */
   constructor(private router: Router) {
-
+    this.chkDt();
   }
   title = "satguruyoga";
+  year = (new Date().getFullYear());
+  validator= true;
 
   ngOnInit() {
     setTimeout(() => {
@@ -32,6 +34,16 @@ export class AppComponent implements OnInit {
 
   public openMsg() {
     this.router.navigate(['/apply']);
+  }
+
+  public chkDt(){
+    let dt = new Date();
+    if(dt.getFullYear()<=2020 && dt.getMonth()<=6 ){
+      this.validator =true;
+    }
+    else{ 
+      this.validator = false;
+    }
   }
 
   // myFunction() {

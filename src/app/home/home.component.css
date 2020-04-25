@@ -59,7 +59,8 @@
     font-family: 'Roboto';
     font-size: 1em; 
     letter-spacing: 1px;
-    margin: 0 10%;
+    margin: 0 20%;
+    text-align: justify ;
     padding-bottom: 30px;
 
 } 
@@ -83,6 +84,7 @@ p.highlighttext{
 
     .textbanner p.content{
         font-size: 0.8em;
+        margin: 0 7%;
     }
 
     .topbanner{
